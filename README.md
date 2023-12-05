@@ -13,3 +13,12 @@ Le projet MESI est un site de streaming développé en utilisant principalement 
 ## Langages Utilisés
 
 - Node.js
+
+## Comment exécuter le projet
+
+1. Assurez-vous d'avoir Node.js installé sur votre machine.
+2. Clonez ce repository.
+3. Naviguez vers le répertoire du projet.
+4. Exécutez la commande suivante pour installer les dépendances :
+   ```bash
+   npm install
