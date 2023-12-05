@@ -1,31 +1,17 @@
-name: Node.js CI
-
-on:
+name: Github workflow
+on: 
   push:
-    branches: ["main"]
-  pull_request:
-    branches: ["main"]
-
+    branches:
+      - main
 jobs:
-  build:
-
+  test:
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [18.x]
-
     steps:
-      - uses: actions/checkout@v3
-
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: 'npm'
-      - run: |
-          if [ "$RUNNER_OS" == "Windows" ]; then
-            npm.cmd test
-          else
-            npm test
-          fi
+      - name: checkout repo
+        uses: actions/checkout@v2
+      - name: Nodejs
+        uses: actions/setup-node@v1
+      - name: Install dependencies
+        run: npm install
+      - name: Run the test
+        run: npm test
