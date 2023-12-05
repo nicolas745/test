@@ -1,6 +1,7 @@
 const assert = require('assert');
-describe('test du projet MESI', () => {
-    it('premier test', () => {
-        assert.strictEqual(2 + 3, 5);
-      });
-});
+
+function test1() {
+  const result = 1;
+  assert.strictEqual(result, 1);
+}
+test1();

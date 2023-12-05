@@ -4,12 +4,12 @@
   "description": "",
   "main": "test.js",
   "scripts": {
-    "test": "mocha test.js"
+    "test": "node test.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^3.0.1", 
+    "express": "^3.0.1",
     "socket.io": "^4.7.2"
   },
   "devDependencies": {
