@@ -1,7 +1,7 @@
 {
   "name": "projet-mesi",
   "version": "1.0.0",
-  "description": "",
+  "description": "Bienvenue sur le projet MESI, réalisé dans le cadre de nos études à l'école IPI. Notre équipe est composée de :",
   "main": "test.js",
   "scripts": {
     "test": "node test.js"
@@ -10,6 +10,11 @@
   "license": "ISC",
   "dependencies": {
     "express": "^3.0.1",
+    "Express": "^3.0.1",
+    "express-session": "^1.17.3",
+    "ffmpeg": "^0.0.4",
+    "install": "^0.13.0",
+    "npm": "^10.2.5",
     "socket.io": "^4.7.2"
   },
   "devDependencies": {
